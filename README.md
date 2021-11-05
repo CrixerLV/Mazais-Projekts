@@ -1,7 +1,13 @@
-# Mazais-Projekts
+# Mazais-Projekts-[Vēl izdomāšu]
 
-## Domāju viedot vienkāršu 2D spēli ar SFML.
-
-**Spēles veidu īsti vel nezinu ,jeb to ,kas spēlē būs jādara, bet noteikti neko sarežģītu ,ja nē tad es pabeigšu kādā 2022 gada novembrī**
-
-### DP2-1 Raivo Nikolajenko
+## Apraksts
+	Projekts ,ko viedošu būs SFML Vienkārša spēle
+## Galvenās funkcijas
+	- Reģistrēt peles klikšķus
+	- atlīdzināt ar kādu grasi naudas 
+	- iespēju iegādāties uzlabojumus (noteikti ne daudz)
+## Izmantotās tehnoloģijas
+	- C++
+	- SFML library
+## Izmantotie avoti
+	- [SFML game development](https://www.packtpub.com/product/sfml-game-development/9781849696845)
