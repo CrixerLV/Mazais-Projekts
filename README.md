@@ -1,13 +1,12 @@
 # Mazais-Projekts-[Vēl izdomāšu]
 
 ## Apraksts
-	Projekts ,ko viedošu būs SFML Vienkārša spēle
+	Projekts ,ko viedošu būs domāts 1.klasniekiem (nebūs saistīts tikai ar matemātiku, būs visādi uzdevumi.
 ## Galvenās funkcijas
-	- Reģistrēt peles klikšķus
-	- atlīdzināt ar kādu grasi naudas 
-	- iespēju iegādāties uzlabojumus (noteikti ne daudz)
+	- Izvēlēties uzdevumu
+	- Salīdzināt atbildes 
+	- Izvadīt vai ir pareizi izpildīts vai nē
 ## Izmantotās tehnoloģijas
 	- C++
-	- SFML library
 ## Izmantotie avoti
-	- [SFML game development](https://www.packtpub.com/product/sfml-game-development/9781849696845)
+	- [Geeks for Geeks](Viss ,kas vien tur atrodams.)
