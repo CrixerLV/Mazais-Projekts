@@ -1,7 +1,7 @@
-# Mazais-Projekts-[Vēl izdomāšu]
+# Mazais-Projekts-[Uzdevumi]
 
 ## Apraksts
-	Projekts ,ko viedošu būs domāts 1.klasniekiem (nebūs saistīts tikai ar matemātiku, būs visādi uzdevumi.
+	Projekts ,ko viedošu būs domāts skolēniem (nebūs saistīts tikai ar matemātiku, būs visādi uzdevumi.
 ## Galvenās funkcijas
 	- Izvēlēties uzdevumu
 	- Salīdzināt atbildes 
@@ -10,3 +10,4 @@
 	- C++
 ## Izmantotie avoti
 	- [Geeks for Geeks](Viss ,kas vien tur atrodams.)
+	- [StackOverflor]
