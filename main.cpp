@@ -7,21 +7,21 @@
 // Veidoja Raivo Nikolajenko
 // Zinu, ka te ir ļoti messy kods utt, bet galvenais ,ka viss strādā!
 // Atvainojos par piekto uzdevumu ,ļoti notrigerojos, bet kaut kā izpildiju
-// Beigas sapratu ,ka varēja daudz vieglāk to uztaisīt ar array un char ,bet jau bija par vēlu
-// un ir ļoti daudz citur uzdevumu līdz novembra beigām nācās speedrunot.
-
 
 int main() {
-  int uzdevums = 0;
-
-  char alfabets[26] = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
-
   std::cout << "****************************************" << std::endl << std::endl;
   std::cout << "Sveicināts mazajā projektā! \n";
   std::cout << "Izvēlies uzdevumu un izpildi to pareizi!" << std::endl << std::endl;
   std::cout << "Lai veicas!" << std::endl << std::endl;
   std::cout << "****************************************" << std::endl;
   std::cout << "****************************************" <<std::endl << std::endl;
+char quit;
+  do{
+  int uzdevums = 0;
+
+  char alfabets[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  std::cout << std::endl;
+  std::cout << std::endl;
   std::cout << "Kad esi gatavs ievadi kādu no zemāk redzamajiem cipariem!" << std::endl;
   std::cout << "1 - Alfabēts" << std::endl;
   std::cout << "2 - Alfabēta burts" << std::endl;
@@ -48,7 +48,7 @@ int main() {
           std::cout << "Pareizi";
         }
         else{
-          std::cout << "Nepareizi, Pareizi būtu :"<<  alfabets;
+          std::cout << "Nepareizi, Pareizi būtu :"<<  alfabets << std::endl;
         }
       }
       //////////////////////////////////////////////////////////////////////////////////////////////
@@ -58,14 +58,14 @@ int main() {
         srand (time(NULL));
         int RandElement = rand() %26;
         int atbilde2;
-        std::cout << "Kurš pēc kārtas angļu alfabētā ir burts |"<< alfabets[RandElement] << "| Ievadi skaitli no 1-26" << std::endl;
+        std::cout << "Kurš pēc kārtas angļu alfabētā ir burts |"<< alfabets[RandElement] << "| Ievadi skaitli no 1-27" << std::endl;
           std::cin >> atbilde2;
           if (atbilde2 == RandElement + 1){
             std::cout << "Pareizi";
             
           }
           else{
-            std::cout << "Nepareizi, Pareizi būtu :" << RandElement + 1;
+            std::cout << "Nepareizi, Pareizi būtu :" << RandElement + 1 << std::endl;
           }
       }
       //////////////////////////////////////////////////////////////////////////////////////////////
@@ -277,10 +277,7 @@ int main() {
         std::cout << "3. Nils Ušakovs" << std::endl;
         std::cin >> atbildeuzjaut;
         if (atbildeuzjaut == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Cik Latvijā ir APTUVENI iedzīvotāju?" << std::endl;
@@ -290,10 +287,7 @@ int main() {
         std::cout << "3. 1.9 miljoni" << std::endl;
         std::cin >> atbildeuzjaut1;
         if (atbildeuzjaut1 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kura ir Latvijas galvaspilsēta?" << std::endl;
@@ -303,10 +297,7 @@ int main() {
         std::cout << "3. Ķengarags" << std::endl;
         std::cin >> atbildeuzjaut2;
         if (atbildeuzjaut2 == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kura ir otrā lielākā pilsēta Latvijā?" << std::endl;
@@ -316,10 +307,7 @@ int main() {
         std::cout << "3. Ventspils" << std::endl;
         std::cin >> atbildeuzjaut3;
         if (atbildeuzjaut3 == 2){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Cik APTUVENI liela platība ir Latvijai?" << std::endl;
@@ -329,10 +317,7 @@ int main() {
         std::cout << "3. 64000 m2" << std::endl;
         std::cin >> atbildeuzjaut4;
         if (atbildeuzjaut4 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurš ir ielākais ezers Latvijā?" << std::endl;
@@ -342,10 +327,7 @@ int main() {
         std::cout << "3. Baikāls" << std::endl;
         std::cin >> atbildeuzjaut5;
         if (atbildeuzjaut5 == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurš ir dziļākais ezers Latvijā?" << std::endl;
@@ -355,10 +337,7 @@ int main() {
         std::cout << "3. Rīgas Jūras Ezers" << std::endl;
         std::cin >> atbildeuzjaut6;
         if (atbildeuzjaut6 == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurš ir lielākais purvs Latvijā?" << std::endl;
@@ -368,10 +347,7 @@ int main() {
         std::cout << "3. Gaujas purvs" << std::endl;
         std::cin >> atbildeuzjaut7;
         if (atbildeuzjaut7 == 2){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kura ir Latvijas vecākā pilsēta??" << std::endl;
@@ -381,10 +357,7 @@ int main() {
         std::cout << "3. Ludza" << std::endl;
         std::cin >> atbildeuzjaut8;
         if (atbildeuzjaut8 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurā pilsētā ir lielākais udenskritums Eiropā?" << std::endl;
@@ -394,10 +367,7 @@ int main() {
         std::cout << "3. Kolkā" << std::endl;
         std::cin >> atbildeuzjaut9;
         if (atbildeuzjaut9 == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kura ir Latvijas garākā upe?" << std::endl;
@@ -407,10 +377,7 @@ int main() {
         std::cout << "3. Gauja" << std::endl;
         std::cin >> atbildeuzjaut10;
         if (atbildeuzjaut10 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kura ir Latvijas lielākā upe?" << std::endl;
@@ -420,10 +387,7 @@ int main() {
         std::cout << "3. Mūsa" << std::endl;
         std::cin >> atbildeuzjaut11;
         if (atbildeuzjaut11 == 2){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kāda jūra ir pie Latvijas robežas?" << std::endl;
@@ -433,10 +397,7 @@ int main() {
         std::cout << "3. Baltijas Jūra" << std::endl;
         std::cin >> atbildeuzjaut12;
         if (atbildeuzjaut12 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurā novembrī ir Latvijas dzimšanas diena?" << std::endl;
@@ -446,10 +407,7 @@ int main() {
         std::cout << "3. 18. Novembrī" << std::endl;
         std::cin >> atbildeuzjaut13;
         if (atbildeuzjaut13 == 3){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti += 1;
         }
         std::cout << std::endl;
         std::cout << "Kurš ir augstākais paugurs Latvija?" << std::endl;
@@ -459,17 +417,17 @@ int main() {
         std::cout << "3. Sauleskalns" << std::endl;
         std::cin >> atbildeuzjaut14;
         if (atbildeuzjaut14 == 1){
-          punkti = punkti+1;
-        }
-        else{
-          punkti = punkti-1;
+          punkti +=1;
         }
         std::cout << std::endl;
         std::cout << "Izpildot 5 uzdevumu kopā ieguvi :" << punkti << "/15 punktiem";
+        punkti = 0;
       }
       else{
         std::cout << "Nederīgs uzdevums, ievadi velreiz" << std::endl;
         uzdevums = 0;
       }
     }
-} 
+  }
+while(quit != 'q' );
+}
